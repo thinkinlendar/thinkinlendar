@@ -1,4 +1,4 @@
-# frontend-example
+# allin
 # 注意
 - 4/2のアップデートでデフォルトで`OnPlayerJoined`, `OnPlayerLeft`が出力されなくなったためSteamから`プロパティ->起動オプションを設定`を開いて`--enable-sdk-log-levels`を追加してください
 ## これは何
