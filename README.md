@@ -1,4 +1,4 @@
-# vrc_joined_bell
+# frontend-example
 # 注意
 - 4/2のアップデートでデフォルトで`OnPlayerJoined`, `OnPlayerLeft`が出力されなくなったためSteamから`プロパティ->起動オプションを設定`を開いて`--enable-sdk-log-levels`を追加してください
 ## これは何
@@ -6,7 +6,7 @@
 - VRCのログを見て特定のイベント時に音を鳴らすやつ
 
 ## ダウンロード
-- https://github.com/27Cobalter/vrc_joined_bell/releases
+- https://github.com/27Cobalter/frontend-example/releases
 
 ## 自分で色々やりたい人向け
 - ~~CeVIOのDLLが32bitのためCeVIOの使用時には32bit版pythonを利用する必要あり~~
@@ -28,18 +28,18 @@ $ pip install pythonnet
 ### test 
 ```
 pip install pytest freezegun
-ENV=test pytest vrc_joined_bell.py 
+ENV=test pytest frontend-example.py 
 ```
 
 ### 実行方法
 #### pythonで実行
-- `vrc_joined_bell.py`と同じ階層に設定ファイル`notice.yml`を配置して以下のコマンドを実行
+- `frontend-example.py`と同じ階層に設定ファイル`notice.yml`を配置して以下のコマンドを実行
 ```
-$ python vrc_joined_bell.py
+$ python frontend-example.py
 ```
 #### 実行ファイル生成
 ```
-$ pyinstaller.exe vrc_joined_bell.py -F --hidden-import=clr
+$ pyinstaller.exe frontend-example.py -F --hidden-import=clr
 ```
 dist以下に実行ファイルが生成されるのでexeファイルと同じ階層に設定ファイル`notice.yml`を配置してexeファイルを実行
 
